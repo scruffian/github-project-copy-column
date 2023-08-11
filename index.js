@@ -7,6 +7,7 @@
 // @match        https://github.com/*
 // @icon         https://raw.githubusercontent.com/xthexder/wide-github/master/icons/icon.png
 // @grant        none
+// @licence      GPLv2 or later
 // ==/UserScript==
 
 (function () {
