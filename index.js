@@ -3,7 +3,7 @@
 // @namespace    https://github.com/scruffian/github-project-copy-column
 // @version      0.1
 // @description  Grab links from a GitHub project column and copy them to the clipboard for easy pasting into a PR or issue description.
-// @author       Scriffian
+// @author       Scruffian
 // @match        https://github.com/*
 // @icon         https://raw.githubusercontent.com/xthexder/wide-github/master/icons/icon.png
 // @grant        none
