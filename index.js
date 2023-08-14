@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         GitHub Project Copy Column
 // @namespace    https://github.com/scruffian/github-project-copy-column
-// @version      0.1
+// @version      0.2
 // @description  Grab links from a GitHub project column and copy them to the clipboard for easy pasting into a PR or issue description.
 // @author       Scruffian
 // @match        https://github.com/*
