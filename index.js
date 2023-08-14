@@ -46,16 +46,6 @@
       const allLinks = [];
 
       const getLinks = setInterval(function () {
-        if (
-          scrollableArea.scrollTop + scrollableArea.offsetHeight + 1 >=
-          scrollableArea.scrollHeight
-        ) {
-          clearInterval(getLinks);
-          const uniqueLinks = new Set(allLinks);
-          const linksString = Array.from(uniqueLinks).join("\n\n");
-          copyToClipboardHelper(linksString);
-          alert("Copied " + uniqueLinks.size + " links to clipbard");
-        }
         scrollableArea.scrollTop =
           scrollableArea.scrollTop + scrollableArea.offsetHeight;
         const linksForScrollPoint = column.querySelectorAll(
@@ -66,6 +56,17 @@
             allLinks.push(link.href);
           }
         });
+
+        if (
+          scrollableArea.scrollTop + scrollableArea.offsetHeight + 1 >=
+          scrollableArea.scrollHeight
+        ) {
+          clearInterval(getLinks);
+          const uniqueLinks = new Set(allLinks);
+          const linksString = Array.from(uniqueLinks).join("\n\n");
+          copyToClipboardHelper(linksString);
+          alert("Copied " + uniqueLinks.size + " links to clipbard");
+        }
       }, 150);
     };
   });
